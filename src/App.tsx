@@ -15,20 +15,21 @@ export default function App() {
   const [seconds, setSeconds] = useState(0)
 
 
+  const API = "https://personalbackend-cap6.onrender.com"
 
   const start = async () => {
-    await fetch("http://localhost:8000/start", { method: "POST" })
+    await fetch(`${API}/start`, { method: "POST" })
     setRunning(true)
   }
 
   const stop = async () => {
-    await fetch("http://localhost:8000/stop", { method: "POST" })
+    await fetch(`{API}/stop`, { method: "POST" })
     setRunning(false)
     fetchTotal()
   }
 
   const fetchTotal = async () => {
-    const res = await fetch("http://localhost:8000/today")
+    const res = await fetch(`{API}/today`)
     const data = await res.json()
     setSeconds(data.seconds)
   }
