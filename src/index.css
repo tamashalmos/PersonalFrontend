@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* LIGHT MODE (default) */
+:root {
+  --body_background: white;
+  --body_color: black;
+}
+
+/* DARK MODE */
+[data-theme="dark"] {
+  --body_background: #0f172a;
+  --body_color: #f1f5f9;
+}
+
+/* APPLY */
+body {
+  background-color: var(--body_background);
+  color: var(--body_color);
+}
