@@ -23,13 +23,13 @@ export default function App() {
   }
 
   const stop = async () => {
-    await fetch(`{API}/stop`, { method: "POST" })
+    await fetch(`${API}/stop`, { method: "POST" })
     setRunning(false)
     fetchTotal()
   }
 
   const fetchTotal = async () => {
-    const res = await fetch(`{API}/today`)
+    const res = await fetch(`${API}/today`)
     const data = await res.json()
     setSeconds(data.seconds)
   }
