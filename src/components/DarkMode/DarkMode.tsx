@@ -1,18 +1,22 @@
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import Sun from "./Sun.svg"
 import Moon from "./Moon.svg"
 import "./DarkMode.css"
 
 export default function DarkMode() {
-  const [isDark, setIsDark] = useState(false)
+  const [isDark, setIsDark] = useState(true)
+
+  useEffect(() => {
+  document.documentElement.classList.add("dark")
+},[])
 
   const setDarkMode = () => {
-    document.body.classList.add("dark")
+    document.documentElement.classList.add("dark")
   }
 
-  const setLightMode = () => {
-    document.body.classList.remove("dark")
-  }
+const setLightMode = () => {
+  document.documentElement.classList.remove("dark")
+}
 
   const toggleTheme = (e: React.ChangeEvent<HTMLInputElement>) => {
     const checked = e.target.checked
