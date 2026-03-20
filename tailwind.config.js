@@ -1,20 +1,36 @@
+/** @type {import('tailwindcss').Config} */
 export default {
-  darkMode: "class",
   content: [
     "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}",
+    "./src/**/*.{ts,tsx,js,jsx}",
   ],
   theme: {
     extend: {
       colors: {
-        background: "hsl(var(--background))",
-        foreground: "hsl(var(--foreground))",
+        background: "var(--background)",
+        foreground: "var(--foreground)",
 
-        primary: "hsl(var(--primary))",
-        "primary-foreground": "hsl(var(--primary-foreground))",
+        primary: "var(--primary)",
+        "primary-foreground": "var(--primary-foreground)",
 
-        destructive: "hsl(var(--destructive))",
-        "destructive-foreground": "hsl(var(--destructive-foreground))",
+        secondary: "var(--secondary)",
+        "secondary-foreground": "var(--secondary-foreground)",
+
+        muted: "var(--muted)",
+        "muted-foreground": "var(--muted-foreground)",
+
+        accent: "var(--accent)",
+        "accent-foreground": "var(--accent-foreground)",
+
+        destructive: "var(--destructive)",
+        "destructive-foreground": "var(--destructive-foreground)",
+
+        border: "var(--border)",
+        input: "var(--input)",
+        ring: "var(--ring)",
+      },
+      borderRadius: {
+        lg: "var(--radius)",
       },
     },
   },
