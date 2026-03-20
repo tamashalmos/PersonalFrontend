@@ -16,7 +16,7 @@ export default function App() {
   const [running, setRunning] = useState(false)
   const [seconds, setSeconds] = useState(0)
 
-  const test = "http://localhost:8000"
+  //const test = "http://localhost:8000"
   const prod = "https://personalbackend-cap6.onrender.com"
 
   const start = async () => {
