@@ -99,28 +99,7 @@ return (
       <h2>
         Today total: {seconds} sec
       </h2>
-
-      <div className="mt-4 space-y-2">
-
-  {/* 1. sima Tailwind */}
-  <div className="bg-red-500 text-white p-2 rounded">
-    bg-red-500 (HA EZ PIROS → Tailwind OK)
-  </div>
-
-  {/* 2. shadcn primary */}
-  <div className="bg-primary text-primary-foreground p-2 rounded">
-    bg-primary (HA NEM SZÍNES → content scan hiba)
-  </div>
-
-  {/* 3. destructive */}
-<div className="bg-destructive/10 text-destructive p-2 rounded">
-  bg-destructive/10 (EZNEK HALVÁNY PIROSNAK KELL LENNIE)
-</div>
-
-</div>
-
     </div>
-
   </div>
 )
 }
