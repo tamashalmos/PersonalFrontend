@@ -1,4 +1,5 @@
 @import "tailwindcss";
+@config "../tailwind.config.js";
 
 @layer base {
 
@@ -26,12 +27,9 @@
     --ring: 222.2 84% 4.9%;
 
     --radius: 0.5rem;
-    
-    
-    body {
-      @apply select-none
   }
-  }
+
+
 
   .dark {
     --background: 222.2 84% 4.9%;
@@ -56,26 +54,4 @@
     --input: 217.2 32.6% 17.5%;
     --ring: 212.7 26.8% 83.9%;
   }
-
-  @layer utilities {
-  .bg-background {
-    background-color: hsl(var(--background));
-  }
-
-  .text-foreground {
-    color: hsl(var(--foreground));
-  }
-
-  .bg-primary {
-    background-color: hsl(var(--primary));
-  }
-
-  .text-primary-foreground {
-    color: hsl(var(--primary-foreground));
-  }
-
-  .border-border {
-    border-color: hsl(var(--border));
-  }
-}
 }
