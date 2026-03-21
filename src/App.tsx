@@ -18,7 +18,7 @@ export default function App() {
   const test = "http://localhost:8000"
   const prod = "https://personalbackend-cap6.onrender.com"
 
-  const baseUrl = test
+  const baseUrl = prod
 
   const users: Record<number, string> = {
     1: "Lenyus",
