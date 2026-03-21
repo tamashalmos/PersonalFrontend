@@ -15,7 +15,7 @@ export default function App() {
   const [running, setRunning] = useState(false)
   const [sessions, setSessions] = useState<any[]>([])
 
-  const test = "http://localhost:8000"
+  //const test = "http://localhost:8000"
   const prod = "https://personalbackend-cap6.onrender.com"
 
   const baseUrl = prod
